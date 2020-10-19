@@ -12,7 +12,6 @@ class PublishedManager(models.Manager):
 
 
 class Post(models.Model):
-
     STATUS_CHOICES = (
         ('draft', 'Draft'),
         ('published', 'Published'),
@@ -38,7 +37,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
 
 
 class Comment(models.Model):
